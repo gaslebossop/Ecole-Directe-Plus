@@ -99,7 +99,7 @@ export default function StreakScore({ streakScore, streakHighScore=0, className=
                     Nombre de notes consécutives augmentant votre moyenne générale
                 </InfoButton>
                 
-                <h2>Score de Streak</h2>
+                <h2>Score de La chienneté</h2>
             </WindowHeader>
             <WindowContent>
                 <ShiningDiv className="score" shiningIconsList={[Star]} intensity={streakScore / 13} padding={[50, 80]} ref={containerRef} >

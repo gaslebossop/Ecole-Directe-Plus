@@ -97,7 +97,7 @@ export default function Messaging({ isLoggedIn, activeAccount, fetchMessages, fe
                 <WindowsLayout direction="row" ultimateContainer={true}>
                     <Window allowFullscreen={true} className="inbox-window">
                         <WindowHeader className="inbox-window-header">
-                            <h2>Boîte de réception</h2>
+                            <h2>Boîte de réception de la chienneté</h2>
                         </WindowHeader>
                         <WindowContent>
                             <Inbox isLoggedIn={isLoggedIn} activeAccount={activeAccount} selectedMessage={selectedMessage} setSelectedMessage={setSelectedMessage} fetchMessageMarkAsUnread={fetchMessageMarkAsUnread} />
@@ -105,7 +105,7 @@ export default function Messaging({ isLoggedIn, activeAccount, fetchMessages, fe
                     </Window>
                     <Window growthFactor={3} className="message-content" allowFullscreen={true}>
                         <WindowHeader className="message-reader-window-header">
-                            <h2>Message</h2>
+                            <h2>Message de la chienneté</h2>
                         </WindowHeader>
                         <WindowContent>
                             <MessageReader selectedMessage={selectedMessage} />
