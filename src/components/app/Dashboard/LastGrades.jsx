@@ -26,7 +26,7 @@ export default function LastGrades({ activeAccount, className = "", ...props }) 
 
     return (<Window className={`last-grades ${className}`}>
         <WindowHeader onClick={() => navigate("../grades")}>
-            <h2>Dernières notes</h2>
+            <h2>Dernières notes de la chienneté</h2>
         </WindowHeader>
         <WindowContent>
             <ol className="last-grades-container">
@@ -43,7 +43,10 @@ export default function LastGrades({ activeAccount, className = "", ...props }) 
                                 {el.badges.includes("stonks") && <BadgeStonkInfo />}
                                 {el.badges.includes("meh") && <BadgeMehInfo />}
                                 {el.badges.includes("keepOnFire") && <BadgeStreakInfo />}
+                                {el.badges.includes("chienneté") && <BadgeStreakInfo />}
+
                             </span>
+
                             <span className="last-grade-date">{formatDateRelative(el.date, window.matchMedia("(max-width: 1850px)").matches)}</span>
                         </Link>
                     </li>) : <p className="no-grade-placeholder">Vous n'avez pour l'instant aucune note. Profitez-en le temps que ça dure</p>

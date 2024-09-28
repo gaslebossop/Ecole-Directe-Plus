@@ -31,7 +31,7 @@ export default function Dashboard({ fetchUserGrades, grades, fetchHomeworks, act
 
     // Behavior
     useEffect(() => {
-        document.title = "Accueil • Ecole Directe Plus";
+        document.title = "Accueil • Ecole Directe CHIENNETE";
     }, [])
 
     useEffect(() => {
@@ -87,7 +87,7 @@ export default function Dashboard({ fetchUserGrades, grades, fetchHomeworks, act
 
                             <Window>
                                 <WindowHeader onClick={() => navigate("../homeworks")}>
-                                    <h2>Prochains devoirs surveillés</h2>
+                                    <h2>Prochains devoirs surveillés de la chienneté</h2>
                                 </WindowHeader>
                                 <WindowContent className="upcoming-assignments-container">
                                     <UpcomingAssignments homeworks={homeworks} />
@@ -97,7 +97,7 @@ export default function Dashboard({ fetchUserGrades, grades, fetchHomeworks, act
 
                         <Window growthFactor={1.7} className="notebook-window">
                             <WindowHeader onClick={() => navigate("../homeworks")}>
-                                <h2>Cahier de texte</h2>
+                                <h2>Cahier de texte de la chienneté</h2>
                             </WindowHeader>
                             <WindowContent id="notebook">
                                 <Notebook hideDateController={!isTabletLayout} />
@@ -107,7 +107,7 @@ export default function Dashboard({ fetchUserGrades, grades, fetchHomeworks, act
                     <WindowsLayout>
                         <Window WIP={true}>
                             <WindowHeader onClick={() => navigate("../timetable")}>
-                                <h2>Emploi du temps</h2>
+                                <h2>Emploi du temps de la chienneté</h2>
                             </WindowHeader>
                             <WindowContent>
 

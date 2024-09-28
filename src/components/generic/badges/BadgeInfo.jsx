@@ -97,3 +97,17 @@ export function BadgeStreakInfo ({ className="", id="", activated, ...props }) {
             </Tooltip>
     )
 }
+export function BadgeChienneté ({ className="", id="", activated, ...props }) {
+    return (
+            <Tooltip id={id} {...props}>
+                <TooltipTrigger>
+                    <span className="badge-container">
+                        <BadgeStreak className="badge"/>
+                    </span>
+                </TooltipTrigger>
+                <TooltipContent>
+                    <p>La chienneté vous remerci</p>
+                </TooltipContent>
+            </Tooltip>
+    )
+}
